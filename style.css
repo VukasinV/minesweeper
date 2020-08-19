@@ -1,14 +1,29 @@
+:root {
+  --primary: #efffe9;
+  --danger: #e71d36;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .grid {
   height: 400px;
   width: 400px;
   display: flex;
   flex-wrap: wrap;
-  background-color: gray;
 }
 
 .grid div {
   height: 40px;
   width: 40px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  background-color: var(--primary);
+  box-sizing: border-box;
+  border: 1px solid gray;
 }
 
 .checked {
@@ -17,4 +32,27 @@
 
 .bomb {
   background-color: red;
+}
+
+.danger {
+  background-color: var(--danger) !important;
+}
+
+.control {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.grid-plus {
+  display: flex;
+}
+
+.info {
+  margin-left: 4rem;
+  vertical-align: middle;
+  line-height: 400px;
+  font-size: 40px;
 }
